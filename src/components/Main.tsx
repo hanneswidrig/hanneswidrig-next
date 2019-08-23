@@ -6,9 +6,5 @@ interface MainProps {
 }
 
 export const Main: React.FC<MainProps> = ({ fullName }: MainProps) => {
-  return (
-    <main className="App-main">
-      <section className="App-section">{fullName}</section>
-    </main>
-  );
+  return <main className="App-main"></main>;
 };
