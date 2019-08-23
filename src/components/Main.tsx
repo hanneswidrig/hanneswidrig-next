@@ -1,8 +1,8 @@
-import React from 'react'
-import '../App.css'
+import React from 'react';
+import '../App.css';
 
 interface MainProps {
-  fullName: string
+  fullName: string;
 }
 
 export const Main: React.FC<MainProps> = ({ fullName }: MainProps) => {
@@ -10,5 +10,5 @@ export const Main: React.FC<MainProps> = ({ fullName }: MainProps) => {
     <main className="App-main">
       <section className="App-section">{fullName}</section>
     </main>
-  )
-}
+  );
+};
