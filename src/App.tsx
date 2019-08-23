@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
 
 import './App.css'
-import firebase from './firebase'
-import { Root } from './datamodels/root'
+// import firebase from './firebase'
+// import { Root } from './dataModels/root'
+import { Nav } from './components/Nav'
+import { Main } from './components/Main'
 
 export const App: React.FC = () => {
   // const fb = firebase.database().ref('/')
@@ -17,10 +19,8 @@ export const App: React.FC = () => {
 
   return (
     <div className="App">
-      <nav className="App-nav"></nav>
-      <main className="App-main">
-        <section className="App-section">{fullName}</section>
-      </main>
+      <Nav />
+      <Main fullName={fullName} />
       <footer className="App-footer"></footer>
     </div>
   )
