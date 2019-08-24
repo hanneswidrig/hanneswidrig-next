@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import { ReactComponent as GitHub } from '../resources/svg/github.svg';
 
 interface MainProps {
   fullName: string;
@@ -15,12 +16,13 @@ export const Main: React.FC<MainProps> = (props: MainProps) => {
 
 const Header: React.FC<MainProps> = (props: MainProps) => {
   return (
-    <header>
-      <h1>
+    <header className="App-header">
+      <div className="header-item">
         <a href="/" className="Header-link">
           {props.fullName}
         </a>
-      </h1>
+      </div>
+      <GitHub className="header-item github-icon" />
     </header>
   );
 };

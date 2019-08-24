@@ -4,13 +4,23 @@
 	background-color: #111111;
 }
 
+.App-header {
+	display: flex;
+}
+
+.header-item+.header-item {
+	margin-left: 5rem;
+}
+
 .App-main {
 	display: flex;
+	padding: 2rem;
 	justify-content: center;
 	height: 100%;
 }
 
 .Header-link {
+	font-size: 2rem;
 	color: #ffffff;
 	box-shadow: none;
 	text-decoration: none;
@@ -18,4 +28,14 @@
 
 .Header-link:hover, .Header-link:active {
 	color: #00D58E;
+}
+
+.header-item.github-icon {
+	width: 64px;
+	height: 64px;
+	fill: #ffffff;
+}
+
+.header-item.github-icon:hover {
+	fill: #00D58E;
 }
