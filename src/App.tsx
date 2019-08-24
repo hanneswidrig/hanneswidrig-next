@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import firebase from './firebase';
 import { Root } from './dataModels/root';
-import { Header } from './components/Header';
 import { Main } from './components/Main';
 
 export const App: React.FC = () => {
@@ -19,7 +18,6 @@ export const App: React.FC = () => {
 
   return (
     <div className="App">
-      <Header />
       <Main fullName={fullName} />
       {/* <footer className="App-footer"></footer> */}
     </div>

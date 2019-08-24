@@ -1,15 +1,21 @@
 .App {
 	height: 100vh;
 	text-align: center;
+	background-color: #111111;
 }
 
 .App-main {
 	display: flex;
+	justify-content: center;
 	height: 100%;
-	background-color: #f77754;
 }
 
-.App-header {
-	display: flex;
-	height: 128px;
+.Header-link {
+	color: #ffffff;
+	box-shadow: none;
+	text-decoration: none;
+}
+
+.Header-link:hover, .Header-link:active {
+	color: #00D58E;
 }
