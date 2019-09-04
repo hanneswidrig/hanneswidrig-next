@@ -8,9 +8,10 @@ interface MainProps {
 
 export const Main: React.FC<MainProps> = (props: MainProps) => {
   return (
-    <main className="App-main">
+    <div className="App-main">
       <Header {...props} />
-    </main>
+      <Skillset />
+    </div>
   );
 };
 
@@ -25,4 +26,8 @@ const Header: React.FC<MainProps> = (props: MainProps) => {
       <GitHub className="header-item github-icon" />
     </header>
   );
+};
+
+const Skillset: React.FC = () => {
+  return <></>;
 };
