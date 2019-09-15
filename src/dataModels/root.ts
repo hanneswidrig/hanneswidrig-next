@@ -8,9 +8,9 @@ export interface Me {
 }
 export interface Experience {
   technical: Technical;
-  portfolio: PortfolioItem[];
-  work: WorkItem[];
-  education: EducationItem[];
+  // portfolio: PortfolioItem[];
+  // work: WorkItem[];
+  // education: EducationItem[];
 }
 export interface Technical {
   frontend: Chip[];
@@ -18,9 +18,9 @@ export interface Technical {
   other: Chip[];
   toolbox: Chip[];
 }
-export interface PortfolioItem extends Item {}
-export interface WorkItem extends Item {}
-export interface EducationItem extends Item {}
+// export interface PortfolioItem extends Item {}
+// export interface WorkItem extends Item {}
+// export interface EducationItem extends Item {}
 export interface Details {
   fullName: string;
   profilePhotoUrl: string;
