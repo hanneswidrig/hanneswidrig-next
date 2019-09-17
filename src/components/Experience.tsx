@@ -4,10 +4,16 @@ import { colors } from '../resources/colors';
 
 const StyledExperience = styled.main`
   display: flex;
+  flex-direction: column;
 `;
 
 const StyledCategory = styled.div`
   display: flex;
+  width: 100%;
+
+  & + & {
+    margin-top: 1rem;
+  }
 `;
 
 const StyledChip = styled.div`
@@ -23,6 +29,7 @@ const StyledChip = styled.div`
 
 const StyledCategoryChip = styled(StyledChip)`
   font-weight: 500;
+  width: 128px;
   color: ${colors.black};
   background-color: ${colors.yellow};
   margin-right: 0.5rem;
@@ -37,14 +44,24 @@ export const Experience: React.FC = () => {
 };
 
 const Technical: React.FC = () => {
-  const frontend = ['React', 'Angular'];
+  const frontend = [
+    { name: 'Web', items: ['JavaScript', 'TypeScript'] },
+    { name: 'Front-End', items: ['React', 'Angular'] },
+    { name: 'Back-End', items: ['.NET Core', 'Node.js'] },
+    { name: 'General Purpose', items: ['Python', 'C'] },
+    { name: 'Toolbox', items: ['VSCode', 'Jetbrains Suite', 'Figma'] },
+  ];
   return (
-    <StyledCategory>
-      <CategoryChip name="Front-End" />
-      {frontend.map((framework, idx) => (
-        <Chip key={idx} name={framework} />
+    <>
+      {frontend.map((category, idx) => (
+        <StyledCategory key={idx}>
+          <CategoryChip name={category.name} />
+          {category.items.map((framework, idx) => (
+            <Chip key={idx} name={framework} />
+          ))}
+        </StyledCategory>
       ))}
-    </StyledCategory>
+    </>
   );
 };
 

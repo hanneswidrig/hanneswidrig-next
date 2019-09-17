@@ -23,10 +23,11 @@ const StyledLink = styled.a`
   box-shadow: none;
   text-decoration: none;
   margin: 2rem 0;
+  transition: ease-out 200ms;
 
   &:hover,
   &:active {
-    color: ${colors.mint};
+    color: ${colors.green};
   }
 `;
 
@@ -35,9 +36,10 @@ const StyledGitHub = styled(GitHub)`
   height: 43px;
   fill: ${colors.white};
   cursor: pointer;
+  transition: ease-out 200ms;
 
   &:hover {
-    fill: ${colors.mint};
+    fill: ${colors.green};
   }
 `;
 
