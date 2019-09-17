@@ -1,50 +1,12 @@
 .App {
 	height: 100vh;
 	text-align: center;
-	background-color: #111111;
+	background-color: #2E1F27;
 	font-family: 'Inter', sans-serif;
-}
-
-.App-header {
-	display: flex;
-	align-items: center;
-	height: 64px;
-}
-
-.header-item {
-	margin: auto;
-}
-
-.header-item+.header-item {
-	margin-left: 5rem;
 }
 
 .App-main {
 	display: flex;
+	flex-direction: column;
 	padding: 2rem;
-	justify-content: center;
-	height: 100%;
-}
-
-.Header-link {
-	font-size: 2rem;
-	color: #ffffff;
-	box-shadow: none;
-	text-decoration: none;
-	margin: 2rem 0;
-}
-
-.Header-link:hover, .Header-link:active {
-	color: #00D58E;
-}
-
-.header-item.github-icon {
-	width: 43px;
-	height: 43px;
-	fill: #ffffff;
-	cursor: pointer;
-}
-
-.header-item.github-icon:hover {
-	fill: #00D58E;
 }
