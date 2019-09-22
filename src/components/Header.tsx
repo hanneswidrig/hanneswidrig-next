@@ -8,21 +8,21 @@ interface HeaderProps {
 }
 
 const StyledHeader = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 64px;
+  display: flex;
+  align-items: center;
   padding-bottom: 2rem;
+  justify-content: space-between;
 `;
 
 const StyledName = styled.div``;
 
 const StyledLink = styled.a`
+  margin: 2rem 0;
   font-size: 2rem;
-  color: ${colors.white};
   box-shadow: none;
   text-decoration: none;
-  margin: 2rem 0;
+  color: ${colors.white};
   transition: ease-out 200ms;
 
   &:hover,
@@ -49,7 +49,9 @@ export const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
       <StyledName>
         <StyledLink href="/">{props.fullName}</StyledLink>
       </StyledName>
-      <StyledGitHub />
+      <a href={'https://github.com/hanneswidrig'}>
+        <StyledGitHub />
+      </a>
     </StyledHeader>
   );
 };

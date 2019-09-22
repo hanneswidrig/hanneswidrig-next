@@ -34,7 +34,7 @@ const Job = styled.div<JobProps>`
   padding: 1rem;
   text-align: left;
   flex-direction: column;
-  color: ${colors.black};
+  color: ${colors.white};
   background: ${props => MapKeyToStyle(props.gradient, 'background')};
   margin-top: ${props => MapKeyToStyle(props.gradient, 'marginTop')};
 `;
@@ -73,6 +73,7 @@ export const Work: React.FC<WorkProps> = () => {
       companyLocation: 'Indianapolis, IN',
     },
   ];
+  jobs.pop();
 
   return (
     <StyledContainer>

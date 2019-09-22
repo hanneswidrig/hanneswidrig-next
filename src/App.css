@@ -1,4 +1,5 @@
 .App {
+	min-height: 100vh;
 	text-align: center;
 	background-color: #1C151C;
 	font-family: 'Inter', sans-serif;
