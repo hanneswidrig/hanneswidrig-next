@@ -15,9 +15,9 @@ type ExperienceProps = {};
 export const Experience: React.FC<ExperienceProps> = () => {
   return (
     <StyledExperience>
+      <Work />
       <Technical />
       <Portfolio />
-      <Work />
     </StyledExperience>
   );
 };

@@ -14,5 +14,10 @@ export type TechnicalItem = {
   items: string[];
 };
 export type PortfolioItem = {};
-export type WorkItem = {};
+export type WorkItem = {
+  title: string;
+  companyName: string;
+  companyLocation: string;
+  companyDuration: string;
+};
 export type EducationItem = {};
