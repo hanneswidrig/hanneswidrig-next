@@ -46,7 +46,16 @@ export const Work: React.FC<WorkProps> = () => {
       companyDuration: 'January 2019 - Present',
       companyLocation: 'Indianapolis, IN',
     },
+    {
+      key: 'fusion',
+      title: 'UX Consultant Intern',
+      companyName: 'Fusion Alliance',
+      companyDuration: 'May 2018 - July 2018',
+      companyLocation: 'Indianapolis, IN',
+    },
   ];
+
+  jobs.pop();
 
   return (
     <StyledContainer>
