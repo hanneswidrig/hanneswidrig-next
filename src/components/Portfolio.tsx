@@ -14,8 +14,8 @@ const Name = styled.div`
   font-size: 1.125rem;
   padding: 1rem;
   font-weight: 500;
-  color: ${colors.black};
-  background-color: ${colors.darkyellow};
+  color: ${colors.white};
+  background-color: ${colors.darkgreen};
 `;
 const Description = styled.div`
   padding: 1.25rem 1rem;
@@ -26,7 +26,7 @@ const Description = styled.div`
 const StyledGitBranch = styled(GitBranch)`
   width: 24px;
   height: 24px;
-  fill: ${colors.black};
+  fill: ${colors.white};
   cursor: pointer;
   padding: 0.5rem;
   transition: ease-out 200ms;
