@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { colors } from '../resources/colors';
 
 const StyledContainer = styled.div`
-  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 `;
 
 const StyledCategory = styled.div`

@@ -4,7 +4,7 @@ import { colors } from '../resources/colors';
 import { ReactComponent as GitBranch } from '../resources/svg/branch-f.svg';
 
 const StyledContainer = styled.div`
-  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 `;
 
 const Name = styled.div`

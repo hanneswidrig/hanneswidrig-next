@@ -15,6 +15,7 @@ export type TechnicalItem = {
 };
 export type PortfolioItem = {};
 export type WorkItem = {
+  key: string;
   title: string;
   companyName: string;
   companyLocation: string;
