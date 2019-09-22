@@ -1,7 +1,7 @@
 .App {
 	height: 100vh;
 	text-align: center;
-	background-color: #2E1F27;
+	background-color: #1C1318;
 	font-family: 'Inter', sans-serif;
 }
 
@@ -9,4 +9,6 @@
 	display: flex;
 	flex-direction: column;
 	padding: 2rem;
+	max-width: 920px;
+	margin: 0 auto;
 }

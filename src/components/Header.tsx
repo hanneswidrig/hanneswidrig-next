@@ -27,7 +27,7 @@ const StyledLink = styled.a`
 
   &:hover,
   &:active {
-    color: ${colors.green};
+    color: ${colors.lightgreen};
   }
 `;
 
@@ -39,7 +39,7 @@ const StyledGitHub = styled(GitHub)`
   transition: ease-out 200ms;
 
   &:hover {
-    fill: ${colors.green};
+    fill: ${colors.lightgreen};
   }
 `;
 

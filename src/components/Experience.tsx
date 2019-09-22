@@ -5,6 +5,7 @@ import { colors } from '../resources/colors';
 const StyledExperience = styled.main`
   display: flex;
   flex-direction: column;
+  padding-bottom: 2rem;
 `;
 
 const StyledCategory = styled.div`
@@ -31,11 +32,12 @@ const StyledCategoryChip = styled(StyledChip)`
   font-weight: 500;
   width: 128px;
   color: ${colors.black};
-  background-color: ${colors.yellow};
+  background-color: ${colors.darkyellow};
   margin-right: 0.5rem;
 `;
 
-export const Experience: React.FC = () => {
+type ExperienceProps = {};
+export const Experience: React.FC<ExperienceProps> = () => {
   return (
     <StyledExperience>
       <Technical />
@@ -65,9 +67,9 @@ const Technical: React.FC = () => {
   );
 };
 
-interface ChipProps {
+type ChipProps = {
   name: string;
-}
+};
 const CategoryChip: React.FC<ChipProps> = (props: ChipProps) => {
   return <StyledCategoryChip>{props.name}</StyledCategoryChip>;
 };
