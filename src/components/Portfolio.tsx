@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { colors } from '../resources/colors';
+import { boxShadow } from '../resources/styles/styledExtras';
 import { ReactComponent as GitBranch } from '../resources/svg/branch-f.svg';
 
 const StyledContainer = styled.div`
   margin-bottom: 2rem;
+  ${boxShadow};
 `;
 
 const Name = styled.div`

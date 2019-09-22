@@ -16,7 +16,7 @@ const MapKeyToStyle: (key: string, cssProperty: string) => string = (
   const style: Record<string, Record<string, string>> = {
     background: {
       dmi: dmiGradient,
-      fusion: colors.darkblue,
+      fusion: colors.grey,
     },
     marginTop: {
       dmi: '',
@@ -33,17 +33,15 @@ const Job = styled.div<JobProps>`
   display: flex;
   padding: 1rem;
   text-align: left;
-  border-radius: 4px;
   flex-direction: column;
-  color: ${colors.white};
-  background-color: ${colors.darkblue};
+  color: ${colors.black};
   background: ${props => MapKeyToStyle(props.gradient, 'background')};
   margin-top: ${props => MapKeyToStyle(props.gradient, 'marginTop')};
 `;
 
 const JobTopline = styled.div`
-  display: flex;
   width: 100%;
+  display: flex;
   justify-content: space-between;
 `;
 
