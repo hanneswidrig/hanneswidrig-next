@@ -6,7 +6,7 @@ import { ReactComponent as GitBranch } from '../resources/svg/branch-f.svg';
 const StyledContainer = styled.div`
   padding-bottom: 2rem;
 `;
-const PortfolioItem = styled.div``;
+
 const Name = styled.div`
   display: flex;
   align-items: center;
@@ -41,17 +41,15 @@ type PortfolioProps = {};
 export const Portfolio: React.FC<PortfolioProps> = () => {
   return (
     <StyledContainer>
-      <PortfolioItem>
-        <Name>
-          <div>{"Gardener's Exchange"}</div>
-          <StyledGitBranch />
-        </Name>
-        <Description>
-          {
-            'Peer to peer application that brings the local community together through buying, selling, and trading of home grown produce.'
-          }
-        </Description>
-      </PortfolioItem>
+      <Name>
+        <div>{"Gardener's Exchange"}</div>
+        <StyledGitBranch />
+      </Name>
+      <Description>
+        {
+          'Peer to peer application that brings the local community together through buying, selling, and trading of home grown produce.'
+        }
+      </Description>
     </StyledContainer>
   );
 };
