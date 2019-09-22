@@ -2,8 +2,9 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 import { Technical } from './Technical';
-import { Portfolio } from './Portfolio';
 import { Work } from './Work';
+import { Portfolio } from './Portfolio';
+import { Education } from './Education';
 
 const StyledExperience = styled.main`
   display: flex;
@@ -17,6 +18,7 @@ export const Experience: React.FC<ExperienceProps> = () => {
     <StyledExperience>
       <Technical />
       <Work />
+      <Education />
       <Portfolio />
     </StyledExperience>
   );
