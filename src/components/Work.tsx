@@ -1,12 +1,30 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { colors } from '../resources/colors';
-import { dmiGradient } from '../resources/styles/styledExtras';
+import { dmiGradient, boxShadow } from '../resources/styles/styledExtras';
 import { WorkItem } from '../dataModels/root';
 
 const StyledContainer = styled.div`
   margin-bottom: 2rem;
+  ${boxShadow};
 `;
+
+const MapKeyToStyle: (key: string, cssProperty: string) => string = (
+  key: string,
+  cssProperty: string
+) => {
+  const style: Record<string, Record<string, string>> = {
+    background: {
+      dmi: dmiGradient,
+      fusion: colors.darkblue,
+    },
+    marginTop: {
+      dmi: '',
+      fusion: '16px',
+    },
+  };
+  return style[cssProperty][key];
+};
 
 type JobProps = {
   gradient: string;
@@ -15,9 +33,12 @@ const Job = styled.div<JobProps>`
   display: flex;
   padding: 1rem;
   text-align: left;
+  border-radius: 4px;
   flex-direction: column;
   color: ${colors.white};
-  ${props => (props.gradient === 'dmi' ? dmiGradient : '')};
+  background-color: ${colors.darkblue};
+  background: ${props => MapKeyToStyle(props.gradient, 'background')};
+  margin-top: ${props => MapKeyToStyle(props.gradient, 'marginTop')};
 `;
 
 const JobTopline = styled.div`
@@ -54,8 +75,6 @@ export const Work: React.FC<WorkProps> = () => {
       companyLocation: 'Indianapolis, IN',
     },
   ];
-
-  jobs.pop();
 
   return (
     <StyledContainer>
