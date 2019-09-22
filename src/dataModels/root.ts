@@ -1,15 +1,18 @@
-export interface Root {
-  me: string;
+export type Root = {
   experience: Experience;
-}
-export interface Experience {
-  technical: Chip[];
-  // portfolio: PortfolioItem[];
-  // work: WorkItem[];
-  // education: EducationItem[];
-}
+};
 
-export interface Chip {
+export type Experience = {
+  technical: TechnicalItem[];
+  portfolio: PortfolioItem[];
+  work: WorkItem[];
+  education: EducationItem[];
+};
+
+export type TechnicalItem = {
   name: string;
   items: string[];
-}
+};
+export type PortfolioItem = {};
+export type WorkItem = {};
+export type EducationItem = {};

@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { colors } from '../resources/colors';
+
+import { Technical } from './Technical';
+import { Portfolio } from './Portfolio';
+import { Work } from './Work';
 
 const StyledExperience = styled.main`
   display: flex;
@@ -8,71 +11,13 @@ const StyledExperience = styled.main`
   padding-bottom: 2rem;
 `;
 
-const StyledCategory = styled.div`
-  display: flex;
-  width: 100%;
-
-  & + & {
-    margin-top: 1rem;
-  }
-`;
-
-const StyledChip = styled.div`
-  display: flex;
-  color: ${colors.white};
-  background-color: ${colors.rust};
-  padding: 4px 8px;
-
-  & + & {
-    margin-left: 0.25rem;
-  }
-`;
-
-const StyledCategoryChip = styled(StyledChip)`
-  font-weight: 500;
-  width: 128px;
-  color: ${colors.black};
-  background-color: ${colors.darkyellow};
-  margin-right: 0.5rem;
-`;
-
 type ExperienceProps = {};
 export const Experience: React.FC<ExperienceProps> = () => {
   return (
     <StyledExperience>
       <Technical />
+      <Portfolio />
+      <Work />
     </StyledExperience>
   );
-};
-
-const Technical: React.FC = () => {
-  const frontend = [
-    { name: 'Web', items: ['JavaScript', 'TypeScript'] },
-    { name: 'Front-End', items: ['React', 'Angular'] },
-    { name: 'Back-End', items: ['.NET Core', 'Node.js'] },
-    { name: 'General Purpose', items: ['Python', 'C'] },
-    { name: 'Toolbox', items: ['VSCode', 'Jetbrains Suite', 'Figma'] },
-  ];
-  return (
-    <>
-      {frontend.map((category, idx) => (
-        <StyledCategory key={idx}>
-          <CategoryChip name={category.name} />
-          {category.items.map((framework, idx) => (
-            <Chip key={idx} name={framework} />
-          ))}
-        </StyledCategory>
-      ))}
-    </>
-  );
-};
-
-type ChipProps = {
-  name: string;
-};
-const CategoryChip: React.FC<ChipProps> = (props: ChipProps) => {
-  return <StyledCategoryChip>{props.name}</StyledCategoryChip>;
-};
-const Chip: React.FC<ChipProps> = (props: ChipProps) => {
-  return <StyledChip>{props.name}</StyledChip>;
 };

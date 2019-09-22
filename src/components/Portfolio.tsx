@@ -29,10 +29,11 @@ const StyledGitBranch = styled(GitBranch)`
   fill: ${colors.white};
   cursor: pointer;
   padding: 0.5rem;
+  border-radius: 50%;
   transition: ease-out 200ms;
 
   &:hover {
-    fill: ${colors.lightblue};
+    background-color: ${colors.darkergreen};
   }
 `;
 
