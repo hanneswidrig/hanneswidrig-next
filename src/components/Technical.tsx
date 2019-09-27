@@ -40,7 +40,7 @@ export const Technical: React.FC<TechnicalProps> = () => {
     { name: 'Web', items: ['JavaScript', 'TypeScript'] },
     { name: 'Front-End', items: ['React', 'Angular'] },
     { name: 'Back-End', items: ['.NET Core', 'Node.js'] },
-    { name: 'General Purpose', items: ['Python', 'C'] },
+    { name: 'General Purpose', items: ['C#', 'Python', 'C'] },
     { name: 'Toolbox', items: ['VSCode', 'Jetbrains Suite', 'Figma'] },
   ];
   return (
