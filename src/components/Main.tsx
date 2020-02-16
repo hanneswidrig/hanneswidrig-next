@@ -6,7 +6,7 @@ import { Experience } from './Experience';
 type MainProps = {
   fullName: string;
 };
-export const Main: React.FC<MainProps> = (props: MainProps) => {
+export const Main = (props: MainProps) => {
   return (
     <div className="App-main">
       <Header {...props} />

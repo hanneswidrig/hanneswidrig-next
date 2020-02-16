@@ -32,7 +32,7 @@ const SchoolSubsection = styled.div`
   font-size: 0.875rem;
 `;
 
-export const Education: React.FC = () => {
+export const Education = () => {
   return (
     <StyledContainer>
       <School>

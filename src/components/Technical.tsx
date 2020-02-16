@@ -34,8 +34,7 @@ const StyledCategoryChip = styled(StyledChip)`
   margin-right: 0.5rem;
 `;
 
-type TechnicalProps = {};
-export const Technical: React.FC<TechnicalProps> = () => {
+export const Technical = () => {
   const frontend = [
     { name: 'Web', items: ['JavaScript', 'TypeScript'] },
     { name: 'Front-End', items: ['React', 'Angular'] },
@@ -60,9 +59,9 @@ export const Technical: React.FC<TechnicalProps> = () => {
 type ChipProps = {
   name: string;
 };
-const CategoryChip: React.FC<ChipProps> = (props: ChipProps) => {
+const CategoryChip = (props: ChipProps) => {
   return <StyledCategoryChip>{props.name}</StyledCategoryChip>;
 };
-const Chip: React.FC<ChipProps> = (props: ChipProps) => {
+const Chip = (props: ChipProps) => {
   return <StyledChip>{props.name}</StyledChip>;
 };

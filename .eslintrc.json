@@ -19,13 +19,7 @@
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "@typescript-eslint/explicit-function-return-type": [
-      "warn",
-      {
-        "allowExpressions": true,
-        "allowTypedFunctionExpressions": true
-      }
-    ],
+    "@typescript-eslint/explicit-function-return-type": "off",
     "indent": "off",
     "@typescript-eslint/indent": "off"
   },

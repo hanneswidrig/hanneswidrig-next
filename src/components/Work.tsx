@@ -55,8 +55,7 @@ const JobSubsection = styled.div`
   font-size: 0.875rem;
 `;
 
-type WorkProps = {};
-export const Work: React.FC<WorkProps> = () => {
+export const Work = () => {
   const jobs: WorkItem[] = [
     {
       key: 'dmi',

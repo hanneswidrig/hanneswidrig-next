@@ -39,11 +39,11 @@ const StyledGitHub = styled(GitHub)`
   transition: ease-out 200ms;
 
   &:hover {
-    fill: ${colors.lightgreen};
+    fill: ${colors.lightblue};
   }
 `;
 
-export const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
+export const Header = (props: HeaderProps) => {
   return (
     <StyledHeader>
       <StyledName>

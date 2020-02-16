@@ -12,8 +12,7 @@ const StyledExperience = styled.main`
   padding-bottom: 2rem;
 `;
 
-type ExperienceProps = {};
-export const Experience: React.FC<ExperienceProps> = () => {
+export const Experience = () => {
   return (
     <StyledExperience>
       <Technical />

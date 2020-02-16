@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import './App.css';
-import firebase from './firebase';
-import { Root } from './dataModels/root';
 import { Main } from './components/Main';
 
-export const App: React.FC = () => {
+export const App = () => {
   // const fb = firebase.database().ref('/');
-  const [fullName, setFullName] = useState('Hannes Widrig');
+  const [fullName] = useState('Hannes Widrig');
 
   // useEffect(() => {
   //   fb.once('value').then((snapshot: firebase.database.DataSnapshot) => {
