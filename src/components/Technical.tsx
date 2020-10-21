@@ -34,7 +34,7 @@ const StyledCategoryChip = styled(StyledChip)`
   margin-right: 0.5rem;
 `;
 
-export const Technical = () => {
+export const Technical = (): JSX.Element => {
   const frontend = [
     { name: 'Web', items: ['JavaScript', 'TypeScript'] },
     { name: 'Front-End', items: ['React', 'Angular'] },

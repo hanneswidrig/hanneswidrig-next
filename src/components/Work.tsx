@@ -35,8 +35,8 @@ const Job = styled.div<JobProps>`
   text-align: left;
   flex-direction: column;
   color: ${colors.white};
-  background: ${props => MapKeyToStyle(props.gradient, 'background')};
-  margin-top: ${props => MapKeyToStyle(props.gradient, 'marginTop')};
+  background: ${(props) => MapKeyToStyle(props.gradient, 'background')};
+  margin-top: ${(props) => MapKeyToStyle(props.gradient, 'marginTop')};
 `;
 
 const JobTopline = styled.div`
@@ -55,7 +55,7 @@ const JobSubsection = styled.div`
   font-size: 0.875rem;
 `;
 
-export const Work = () => {
+export const Work = (): JSX.Element => {
   const jobs: WorkItem[] = [
     {
       key: 'dmi',
@@ -76,7 +76,7 @@ export const Work = () => {
 
   return (
     <StyledContainer>
-      {jobs.map(job => (
+      {jobs.map((job) => (
         <Job key={job.key} gradient={job.key}>
           <JobTopline>
             <JobTitle>{job.title}</JobTitle>

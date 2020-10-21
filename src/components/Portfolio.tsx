@@ -40,7 +40,7 @@ const StyledGitBranch = styled(GitBranch)`
   transition: ease-out 200ms;
 `;
 
-export const Portfolio = () => {
+export const Portfolio = (): JSX.Element => {
   return (
     <>
       <StyledContainer>

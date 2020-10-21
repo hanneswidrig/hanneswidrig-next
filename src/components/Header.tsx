@@ -43,7 +43,7 @@ const StyledGitHub = styled(GitHub)`
   }
 `;
 
-export const Header = (props: HeaderProps) => {
+export const Header = (props: HeaderProps): JSX.Element => {
   return (
     <StyledHeader>
       <StyledName>

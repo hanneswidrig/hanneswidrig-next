@@ -12,7 +12,7 @@ const StyledExperience = styled.main`
   padding-bottom: 2rem;
 `;
 
-export const Experience = () => {
+export const Experience = (): JSX.Element => {
   return (
     <StyledExperience>
       <Technical />
