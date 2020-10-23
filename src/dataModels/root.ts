@@ -13,7 +13,7 @@ export type TechnicalItem = {
   name: string;
   items: string[];
 };
-export type PortfolioItem = {};
+export type PortfolioItem = unknown;
 export type WorkItem = {
   key: string;
   title: string;
@@ -21,4 +21,4 @@ export type WorkItem = {
   companyLocation: string;
   companyDuration: string;
 };
-export type EducationItem = {};
+export type EducationItem = unknown;
