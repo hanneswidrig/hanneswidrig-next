@@ -1,17 +1,17 @@
 {
   "name": "hanneswidrig-next",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "dependencies": {
     "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
     "@types/jest": "26.0.15",
-    "@types/node": "14.14.0",
+    "@types/node": "14.14.2",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0",
-    "react-scripts": "3.4.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.0",
     "typescript": "4.0.3"
   },
   "scripts": {
@@ -39,8 +39,8 @@
     "@typescript-eslint/eslint-plugin": "^4.5.0",
     "@typescript-eslint/parser": "^4.5.0",
     "@typescript-eslint/typescript-estree": "^4.5.0",
-    "eslint": "^6.6.0",
-    "eslint-config-prettier": "^6.13.0",
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.14.0",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "firebase": "^7.24.0",
