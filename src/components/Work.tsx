@@ -2,7 +2,14 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { colors } from '../resources/colors';
 import { dmiGradient, boxShadow } from '../resources/styles/styledExtras';
-import { WorkItem } from '../dataModels/root';
+
+type WorkItem = {
+  key: string;
+  title: string;
+  companyName: string;
+  companyLocation: string;
+  companyDuration: string;
+};
 
 const StyledContainer = styled.div`
   margin-bottom: 2rem;
