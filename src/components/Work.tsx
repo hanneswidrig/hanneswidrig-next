@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { colors } from '../resources/colors';
-import { dmiGradient, boxShadow } from '../resources/styles/styledExtras';
+import { colors } from '../colors';
+import { dmiGradient, boxShadow } from '../styledExtras';
 
 type WorkItem = {
   key: string;

@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { colors } from '../resources/colors';
-import { boxShadow } from '../resources/styles/styledExtras';
-import { ReactComponent as GitBranch } from '../resources/svg/branch-f.svg';
+
+import { colors } from '../colors';
+import { boxShadow } from '../styledExtras';
 
 type PortfolioStyleProp = { primary?: boolean };
 
@@ -29,7 +29,7 @@ const Description = styled.div`
   background-color: ${colors.white};
 `;
 
-const StyledGitBranch = styled(GitBranch)`
+const StyledGitBranch = styled.div`
   width: 24px;
   height: 24px;
   cursor: pointer;
@@ -41,7 +41,7 @@ const StyledGitBranch = styled(GitBranch)`
 
 export const Portfolio = (): JSX.Element => {
   return (
-    <>
+    <React.Fragment>
       <StyledContainer>
         <Name primary>
           <div>{'Pull Request Center'}</div>
@@ -62,6 +62,6 @@ export const Portfolio = (): JSX.Element => {
           {'Peer to peer application that brings the local community together through buying, selling, and trading of home grown produce.'}
         </Description>
       </StyledContainer>
-    </>
+    </React.Fragment>
   );
 };

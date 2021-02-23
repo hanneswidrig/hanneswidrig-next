@@ -1,7 +1,7 @@
 import React from 'react';
-import { ReactComponent as GitHub } from '../resources/svg/github.svg';
 import styled from '@emotion/styled';
-import { colors } from '../resources/colors';
+
+import { colors } from '../colors';
 
 interface HeaderProps {
   fullName: string;
@@ -31,7 +31,7 @@ const StyledLink = styled.a`
   }
 `;
 
-const StyledGitHub = styled(GitHub)`
+const StyledGitHub = styled.div`
   width: 43px;
   height: 43px;
   fill: ${colors.white};
