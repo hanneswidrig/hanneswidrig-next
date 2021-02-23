@@ -19,8 +19,7 @@ const Name = styled.div<PortfolioStyleProp>`
   font-size: 1.125rem;
   color: ${colors.white};
   justify-content: space-between;
-  background-color: ${(props: PortfolioStyleProp) =>
-    props.primary ? colors.darkblue : colors.darkgreen};
+  background-color: ${(props: PortfolioStyleProp) => (props.primary ? colors.darkblue : colors.darkgreen)};
 `;
 
 const Description = styled.div`
@@ -46,16 +45,11 @@ export const Portfolio = (): JSX.Element => {
       <StyledContainer>
         <Name primary>
           <div>{'Pull Request Center'}</div>
-          <a
-            href={
-              'https://github.com/hanneswidrig/azure-devops-pull-request-center'
-            }>
+          <a href={'https://github.com/hanneswidrig/azure-devops-pull-request-center'}>
             <StyledGitBranch />
           </a>
         </Name>
-        <Description>
-          {'A centralized location for your Azure DevOps Pull Requests.'}
-        </Description>
+        <Description>{'A centralized location for your Azure DevOps Pull Requests.'}</Description>
       </StyledContainer>
       <StyledContainer>
         <Name>
@@ -65,9 +59,7 @@ export const Portfolio = (): JSX.Element => {
           </a>
         </Name>
         <Description>
-          {
-            'Peer to peer application that brings the local community together through buying, selling, and trading of home grown produce.'
-          }
+          {'Peer to peer application that brings the local community together through buying, selling, and trading of home grown produce.'}
         </Description>
       </StyledContainer>
     </>

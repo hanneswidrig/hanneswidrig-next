@@ -16,10 +16,7 @@ const StyledContainer = styled.div`
   ${boxShadow};
 `;
 
-const MapKeyToStyle: (key: string, cssProperty: string) => string = (
-  key: string,
-  cssProperty: string
-) => {
+const MapKeyToStyle: (key: string, cssProperty: string) => string = (key: string, cssProperty: string) => {
   const style: Record<string, Record<string, string>> = {
     background: {
       dmi: dmiGradient,

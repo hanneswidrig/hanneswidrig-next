@@ -1,4 +1,4 @@
-import { css, SerializedStyles } from "@emotion/react";
+import { css, SerializedStyles } from '@emotion/react';
 
 export const dmiGradient = `
 linear-gradient(
